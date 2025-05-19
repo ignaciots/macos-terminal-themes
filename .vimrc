@@ -34,7 +34,7 @@ function! CompileAndRun()
               " Fallback: capture program output into a scratch buffer
               botright new
               setlocal buftype=nofile bufhidden=wipe nobuflisted
-              call setline(1, 'Running ./' .target.' …')
+              call setline(1, 'Running ./' .target)
               execute 'read !./'.target
               normal! gg
         endif
